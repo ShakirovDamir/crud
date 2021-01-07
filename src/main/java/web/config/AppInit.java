@@ -46,6 +46,14 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
         return new Filter[] {characterEncodingFilter};
     }
 
+//public void onStartup(ServletContext servletContext) throws ServletException {
+//    FilterRegistration.Dynamic encodingFilter = servletContext.addFilter("encoding-filter", new CharacterEncodingFilter());
+//    encodingFilter.setInitParameter("encoding", "UTF-8");
+//    encodingFilter.setInitParameter("forceEncoding", "true");
+//    encodingFilter.addMappingForUrlPatterns(null, true, "/*");
+//}
+
+
 //    @Override
 //    public void onStartup(ServletContext servletContext) throws ServletException {
 //        //create the root Spring application context
