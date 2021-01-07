@@ -7,8 +7,6 @@ import org.springframework.web.bind.annotation.*;
 import web.model.User;
 import web.service.UserService;
 
-import java.util.ArrayList;
-import java.util.List;
 
 @Controller
 public class UserController {
@@ -22,11 +20,19 @@ public class UserController {
 		return "users";
 	}
 
+
 	@PostMapping(value = "/add")
 	public String add(@ModelAttribute("user") User user) {
 		userService.add(user);
 		return "redirect:/users";
 	}
+
+
+//	@PostMapping(value = "/add")
+//	public String add(@ModelAttribute User user) {
+//		userService.add(user);
+//		return "redirect:/users";
+//	}
 
 	@GetMapping("/remove/{id}")
 	public String removeUser(@PathVariable("id") int id) {

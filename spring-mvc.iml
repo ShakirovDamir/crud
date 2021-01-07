@@ -5,7 +5,9 @@
       <configuration>
         <setting name="validation-enabled" value="true" />
         <setting name="provider-name" value="Hibernate" />
-        <datasource-mapping />
+        <datasource-mapping>
+          <factory-entry name="spring-mvc" value="069642f8-4485-4046-9cb6-fd2fe9c54f50" />
+        </datasource-mapping>
         <naming-strategy-map />
       </configuration>
     </facet>
