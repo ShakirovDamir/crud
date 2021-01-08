@@ -11,7 +11,7 @@ import web.service.UserService;
 @Controller
 public class UserController {
 	@Autowired
-	private UserService userService;
+	UserService userService;
 
 	@GetMapping(value = "/users")
 	public String listUsers(ModelMap model) {
@@ -26,13 +26,6 @@ public class UserController {
 		userService.add(user);
 		return "redirect:/users";
 	}
-
-
-//	@PostMapping(value = "/add")
-//	public String add(@ModelAttribute User user) {
-//		userService.add(user);
-//		return "redirect:/users";
-//	}
 
 	@GetMapping("/remove/{id}")
 	public String removeUser(@PathVariable("id") int id) {

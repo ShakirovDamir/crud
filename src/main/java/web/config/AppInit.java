@@ -14,10 +14,10 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
     // Метод, указывающий на класс конфигурации
     @Override
     protected Class<?>[] getRootConfigClasses() {
-        return new Class<?>[]{
-                HibernateConfig.class
-        //return null;
-    };
+//        return new Class<?>[]{
+//                HibernateConfig.class
+       return null;
+//    };
     }
 
 
@@ -71,10 +71,10 @@ public class AppInit extends AbstractAnnotationConfigDispatcherServletInitialize
 //        ServletRegistration.Dynamic dispatcher = servletContext.addServlet("dispatcher", dispatcherServlet);
 //        dispatcher.setLoadOnStartup(1);
 //        dispatcher.addMapping("/");
-////        FilterRegistration.Dynamic encodingFilter = servletContext.addFilter("encoding-filter", new CharacterEncodingFilter());
-////        encodingFilter.setInitParameter("encoding", "UTF-8");
-////        encodingFilter.setInitParameter("forceEncoding", "true");
-////        encodingFilter.addMappingForUrlPatterns(null, true, "/*");
+//        FilterRegistration.Dynamic encodingFilter = servletContext.addFilter("encoding-filter", new CharacterEncodingFilter());
+//        encodingFilter.setInitParameter("encoding", "UTF-8");
+//        encodingFilter.setInitParameter("forceEncoding", "true");
+//        encodingFilter.addMappingForUrlPatterns(null, true, "/*");
 //    }
 
 
